@@ -8,21 +8,23 @@ tags:
 
 ##### 软件安装
 
+注意：Node.js > 表示Node.js命令行，git > 表示git命令行。
+
 1）git，git命令行，发布上传到github
 
 2）Node.js，hexo工具依赖，windows选择32bit或64bit安装。
 
-3）注意：Node.js > 表示Node.js命令行，git > 表示git命令行。
+3）Node.js > npm install -g hexo-cli，安装hexo客户端。
 
-4）Node.js > npm install -g hexo-cli，安装hexo客户端。
+4）git > hexo init blog，初始化目录，存放博客md文件。
 
-5）git > hexo init blog，初始化目录，存放博客md文件。
+5）Node.js > npm install。
 
-6）Node.js > npm install。
+6）Node.js > npm install hexo-deployer-git -S
 
-7）Node.js > npm install hexo-deployer-git -S
+7）Node.js > npm install hexo-asset-image --save
 
-8）Node.js > npm install hexo-asset-image --save
+<!-- more -->
 
 ##### Github设置
 
@@ -40,13 +42,13 @@ git > ssh add xxxx
 
 git > cd C:\Users\Administrator\.ssh\; vim id_rsa.pub
 
-进入[https://github.com/settings/ssh]:将rsa内容填写到key中。
+进入 https://github.com/settings/ssh 将rsa内容填写到key中。
 
 ##### 配置hexo
 
 1）目录结构，md文件放到source文件夹，图片放到public/img文件夹。
 
- ![hexodir](img/hexodir.png)
+ ![hexodir](/img/hexodir.png)
 
 2）修改配置文件_config.yml
 
@@ -85,7 +87,7 @@ int main(void)
 }
 ```
 
-图片可以直接拖拽进来~  ![jieping](img/jieping.png)
+图片可以直接拖拽进来~  ![jieping](/img/jieping.png)
 
 
 
