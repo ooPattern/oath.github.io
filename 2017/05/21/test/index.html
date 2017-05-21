@@ -5,18 +5,21 @@
   
   <title>如何优雅的使用typora | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="如何优雅的使用typora123456#include&amp;lt;stdio.h&amp;gt;int main(void)&amp;#123;    printf(&quot;hello oopattern\n&quot;);    return 0;&amp;#125; 图片可以直接拖拽进来~">
+  <meta name="description" content="环境搭建部署软件安装1）git，git命令行，发布上传到github 2）Node.js，hexo工具依赖，windows选择32bit或64bit安装。 3）注意：Node.js &amp;gt; 表示Node.js命令行，git &amp;gt; 表示git命令行。 4）Node.js &amp;gt; npm install -g hexo-cli，安装hexo客户端。 5）git &amp;gt; hexo init b">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何优雅的使用typora">
 <meta property="og:url" content="http://oopattern.github.io/2017/05/21/test/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="如何优雅的使用typora123456#include&amp;lt;stdio.h&amp;gt;int main(void)&amp;#123;    printf(&quot;hello oopattern\n&quot;);    return 0;&amp;#125; 图片可以直接拖拽进来~">
+<meta property="og:description" content="环境搭建部署软件安装1）git，git命令行，发布上传到github 2）Node.js，hexo工具依赖，windows选择32bit或64bit安装。 3）注意：Node.js &amp;gt; 表示Node.js命令行，git &amp;gt; 表示git命令行。 4）Node.js &amp;gt; npm install -g hexo-cli，安装hexo客户端。 5）git &amp;gt; hexo init b">
+<meta property="og:image" content="http://oopattern.github.io/img/gitname.png">
+<meta property="og:image" content="http://oopattern.github.io/2017/05/21/test/img/hexodir.png">
+<meta property="og:image" content="http://oopattern.github.io/img/imgname.png">
 <meta property="og:image" content="http://oopattern.github.io/2017/05/21/test/img/jieping.png">
-<meta property="og:updated_time" content="2017-05-21T14:34:28.335Z">
+<meta property="og:updated_time" content="2017-05-21T16:47:31.900Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何优雅的使用typora">
-<meta name="twitter:description" content="如何优雅的使用typora123456#include&amp;lt;stdio.h&amp;gt;int main(void)&amp;#123;    printf(&quot;hello oopattern\n&quot;);    return 0;&amp;#125; 图片可以直接拖拽进来~">
-<meta name="twitter:image" content="http://oopattern.github.io/2017/05/21/test/img/jieping.png">
+<meta name="twitter:description" content="环境搭建部署软件安装1）git，git命令行，发布上传到github 2）Node.js，hexo工具依赖，windows选择32bit或64bit安装。 3）注意：Node.js &amp;gt; 表示Node.js命令行，git &amp;gt; 表示git命令行。 4）Node.js &amp;gt; npm install -g hexo-cli，安装hexo客户端。 5）git &amp;gt; hexo init b">
+<meta name="twitter:image" content="http://oopattern.github.io/img/gitname.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -87,13 +90,43 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="如何优雅的使用typora"><a href="#如何优雅的使用typora" class="headerlink" title="如何优雅的使用typora"></a>如何优雅的使用typora</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"hello oopattern\n"</span>);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <h4 id="环境搭建部署"><a href="#环境搭建部署" class="headerlink" title="环境搭建部署"></a>环境搭建部署</h4><h5 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h5><p>1）git，git命令行，发布上传到github</p>
+<p>2）Node.js，hexo工具依赖，windows选择32bit或64bit安装。</p>
+<p>3）注意：Node.js &gt; 表示Node.js命令行，git &gt; 表示git命令行。</p>
+<p>4）Node.js &gt; npm install -g hexo-cli，安装hexo客户端。</p>
+<p>5）git &gt; hexo init blog，初始化目录，存放博客md文件。</p>
+<p>6）Node.js &gt; npm install。</p>
+<p>7）Node.js &gt; npm install hexo-deployer-git -S</p>
+<p>8）Node.js &gt; npm install hexo-asset-image –save</p>
+<h5 id="Github设置"><a href="#Github设置" class="headerlink" title="Github设置"></a>Github设置</h5><p>1）创建一个新的repository：你的Github用户名.github.io</p>
+<p>2）确认用户名必须一致，否则浏览器访问博客的时候会出现404错误。</p>
+<p> <img src="/img/gitname.png" alt="gitname"></p>
+<p>3）设置Github的SSH。开发者向GitHub版本库写入最常用到的协议是SSH协议，因为SSH协议使用公钥认证。</p>
+<p>git &gt; ssh-keygen -t rsa -C  “Github的注册邮箱地址”</p>
+<p>git &gt; ssh add xxxx</p>
+<p>git &gt; cd C:\Users\Administrator.ssh\; vim id_rsa.pub</p>
+<p>进入[<a href="https://github.com/settings/ssh]:将rsa内容填写到key中。" target="_blank" rel="external">https://github.com/settings/ssh]:将rsa内容填写到key中。</a></p>
+<h5 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h5><p>1）目录结构，md文件放到source文件夹，图片放到public/img文件夹。</p>
+<p> <img src="img/hexodir.png" alt="hexodir"></p>
+<p>2）修改配置文件_config.yml</p>
+<p>具体配置选项可参考github.io项目的_config.yml文件。</p>
+<p><strong>注意</strong>：每一项的填写，其<code>:</code>后面都要保留一个空格。</p>
+<p>3）运行hexo命令，上传github</p>
+<p>hexo g # 生成静态HTML网页</p>
+<p>hexo d #上传到github</p>
+<p>hexo s # 本地调试，<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></p>
+<h5 id="可视化编辑hexo"><a href="#可视化编辑hexo" class="headerlink" title="可视化编辑hexo"></a>可视化编辑hexo</h5><p>1）用Typora(Windows版本)编写博客，保存为.md后缀。</p>
+<p>2）图片资源存放到public/img文件夹下。引用方法：<img src="/img/imgname.png" alt="imgname"></p>
+<p>3）将md文件拷贝到source/__post/目录下，然后执行：</p>
+<p>git &gt; hexo g # 生成HTML网页</p>
+<p>git &gt; hexo d # 上传github</p>
+<h4 id="如何优雅的使用typora"><a href="#如何优雅的使用typora" class="headerlink" title="如何优雅的使用typora"></a>如何优雅的使用typora</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"hello oopattern\n"</span>);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>图片可以直接拖拽进来~  <img src="img/jieping.png" alt="jieping"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oopattern.github.io/2017/05/21/test/" data-id="cj2yt10ff0003usfaz7fcuth0" class="article-share-link">Share</a>
+      <a data-url="http://oopattern.github.io/2017/05/21/test/" data-id="cj2yxs1vw0003j8fap9tp4xge" class="article-share-link">Share</a>
       
       
     </footer>
